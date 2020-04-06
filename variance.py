@@ -37,7 +37,7 @@ while True:
 
         #use first frame of video and apply background subtracted mask
         color_image = cv2.applyColorMap(accum_image, cv2.COLORMAP_HOT)
-        variance = cv2.addWeighted(first_frame, 0.7, color_image, 0.7, 0)
+        variance = cv2.addWeighted(frame, 0.7, color_image, 0.7, 0)
 
         #showing output
         cv2.imshow("original", frame)
