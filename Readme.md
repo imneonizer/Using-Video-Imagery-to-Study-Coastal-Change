@@ -46,7 +46,7 @@ python variance.py
 
 ### Bright image
 
-A “bright” image shows the brightest pixel values throughout the video, useful for identifying the position of maximum wave run-up on the beach, position of all breaking waves, and sea-state.
+A “bright” image shows the brightest frame throughout the video.
 
 ````
 python bright_dark.py
@@ -56,7 +56,7 @@ python bright_dark.py
 
 ### Dark image
 
-A “dark” image shows the darkest pixel values throughout the video, useful for tracking sediment plumes, tracking floating debris, and filtering out breaking waves.
+A “dark” image shows the darkest throughout the video
 
 ````
 python bright_dark.py
@@ -64,7 +64,29 @@ python bright_dark.py
 
 ![](darkest.jpg)
 
+### Super Bright
 
+A “bright” image shows the brightest pixel values throughout the video, useful for identifying the position of maximum wave run-up on the beach, position of all breaking waves, and sea-state.
+
+````
+python super_bright_dark.py
+````
+
+**output**
+
+![](super_bright_frame.jpg)
+
+### Super Dark
+
+A “dark” image shows the darkest pixel values throughout the video, useful for tracking sediment plumes, tracking floating debris, and filtering out breaking waves.
+
+````
+python super_bright_dark.py
+````
+
+**output**
+
+![](super_dark_frame.jpg)
 
 ### Useful Links
 
